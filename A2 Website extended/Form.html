@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--Form.html file
+ Written by Stephen Watson 
+ Web tech assignment 2 ServiceU  
+Tuesday, ‎8 ‎October ‎2019, ‏‎11:02:34 AM-->
+<html lang="en">
+	<head> 
+		<script>
+		function ValidateForm()                                    
+		{ 
+			//Declaring all the variables for the form and function to recognise files
+			var FirstName = document.forms["BusForm"]["First Name"];               
+			var LastName = document.forms["BusForm"]["Last Name"];
+			var PhoneNumber = document.forms["BusForm"]["Phone Number"];
+			var PhoneNumber01 = document.forms["BusForm"]["Phone Number 01"];     
+			var Vehicle = document.forms["BusForm"]['Vehicle'];
+			var Qualified = document.forms["BusForm"]["Qualified"];
+			var Certified = document.forms["BusForm"]["Certified"];
+			var Insured = document.forms["BusForm"]["Insured"];
+			var Email = document.forms["BusForm"]["Email"];
+			var Email01 = document.forms["BusForm"]["Email01"];
+			var Equipment = document.forms["BusForm"]["Equipment"];
+			var Age = document.forms["BusForm"]["age"];
+			var BusinessAddress = document.forms["BusForm"]["Business Address"];
+
+			var tel = /^\d{10}?/;
+			var e = /\S+@\S+\.\S+/;
+			//function equations telephone and email name
+				
+			if (FirstName.value == "")                                  
+			{ 
+				window.alert("Please enter your first name."); 
+				FirstName.focus(); 
+				return false; 
+			}
+			//Return alert for first name
+			
+			if (LastName.value == "")                                  
+			{ 
+				window.alert("Please enter your  last name."); 
+				LastName.focus(); 
+				return false; 
+			}
+			//Return alert for last name
+
+			if (!PhoneNumber.value.match(tel))
+			{
+				window.alert("Please enter a valid phone number.");
+				PhoneNumber.focus(); 
+				return false; 
+			}//Return alert for Phone Number
+
+			
+
+			if (!Email.value.match(e))
+			{
+				window.alert("Please enter a valid email.");
+				Email.focus(); 
+				return false; 
+			} //Return alert for empty email
+
+			if (Email.value.indexOf("@", 0) < 0)                 
+			{ 
+				window.alert("Please enter a valid e-mail address."); 
+				Email.focus(); 
+				return false; 
+			} //Checking email for @ symbol
+		   
+			if (Email.value.indexOf(".", 0) < 0)                 
+			{ 
+				window.alert("Please enter a valid e-mail address."); 
+				Email.focus(); 
+				return false; 
+			}//Checking email for . symbol in .com
+
+			if(!(Age[0].checked || Age[1].checked || Age[2].checked || Age[3].checked || Age[4].checked || Age[5].checked))
+	            {
+                window.alert( "Please click an age option." );
+				return false;   
+	            } //Return alert for non selected age radio button
+
+	        if (BusinessAddress.value == "")                                  
+			{ 
+				window.alert("Please enter your Business Address."); 
+				BusinessAddress.focus(); 
+				return false; 
+			}	//Return alert for empty business address
+
+			if (!PhoneNumber01.value.match(tel))
+			{
+				window.alert("Please enter a valid phone number.");
+				PhoneNumber01.focus(); 
+				return false;
+				//Return alert for second Phone Number 
+			}
+
+			if (!Email01.value.match(e))
+			{
+				window.alert("Please enter a valid email.");
+				Email01.focus(); 
+				return false; 
+			}	//Return alert for empty second email
+
+			if (Email01.value.indexOf("@", 0) < 0)                 
+			{ 
+				window.alert("Please enter a valid e-mail address."); 
+				Email01.focus(); 
+				return false; 
+			} //Checking second email for @ symbol in 
+		   
+			if (Email01.value.indexOf(".", 0) < 0)                 
+			{ 
+				window.alert("Please enter a valid e-mail address."); 
+				Email01.focus(); 
+				return false; 
+			}	//checking second email for . symbol in .com
+			
+			if(Vehicle.value == "none") 
+			{
+                alert('Please select vehicle used!');
+				Vehicle.focus();
+                return false;
+                
+			}
+			//Return alert dropdown box vehicle
+
+			if(!(Equipment[0].checked || Equipment[1].checked || Equipment[2].checked || Equipment[3].checked))
+	            {
+                window.alert( "Please click an equipment option." );
+				return false;   
+	            }//Return alert for non selected equipment radio button
+
+			
+			if (!Qualified.checked) 
+			{
+				window.alert( "Please show you are Qualified." );
+				Qualified.focus();
+				return false; 
+			} //Return alert for Qualified checkbox being checked
+			
+			if (!Certified.checked) 
+			{
+				window.alert( "Please show you are Certified." );
+				Certified.focus();
+				return false; 
+			} //Return alert for Certified checkbox being checked
+			
+			if (!Insured.checked) 
+			{
+				window.alert( "Please show you are Insured." );
+				Insured.focus();
+				return false; 
+			}
+			//Return alert for insured checkbox being checked
+			return true; 
+		}
+		
+	</script> 
+	<style>
+	</style>
+	<link href="style.css" rel="stylesheet" type="text/css"/><!--Link for css StyleSheet-->
+	 <title>Service U, no fuss, fast and effictive services brought to your home</title>
+	 <meta name="vewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+			<div id="Familypic"> 
+				<img src="Images/Family.png" alt="family" />
+			</div>
+			<div>
+				<h1>Service<span>U</span><br>Application<br>Information<br></h1>
+			</div>
+			<!--Above is a picture and h1 heading for the form controlled by CSS -->
+			<header>
+				<div class="help">
+					<img src="Images/box4.png" width="30" height="10" alt="color box green"/>
+					<a href="index.html">return to home</a>
+				</div>
+			</header>
+			<nav>
+				<div id="FormPics">
+				<img src="Images/LifeCoachingPic.jpg" width="200" height="200" alt="wisdomtree" />
+				<br>
+				<br>
+				<img src="Images/FinancialPic.jpg" width="200" height="200" alt="Calculator" />
+				<br>
+				<br>
+				<img src="Images/physicalTrainingPic.jpg" width="200" height="200" alt="WeightBar" />
+				<br>
+				<br>
+				<img src="Images/Carpentry&Construction.jpg" width="200" height="200" alt="carpentry" />
+				<br>
+				<br>
+				<img src="Images/RemedialMassage.jpg" width="200" height="200" alt="Remedial massage" />
+				</div>
+				<!--Above are pictures used on the form page to improve the overall look, keeping same theme as homepage. -->
+			</nav>
+		<main>	
+				<div class="form"><!--Below is the code to run the form given an name and controlled by javascript and CSS.-->
+					<form name="BusForm" onsubmit="return ValidateForm()"
+					action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank">
+					*First Name of Owner* <input type="text" placeholder="First name only" name="First Name"><br><!--general code for simple text inputs below -->
+					*Last Name of Owner* <input type="text" placeholder="Last name only" name="Last Name"><br>
+					*Phone Number* <input type="text" placeholder="Phone number" name="Phone Number"><br>
+					*Email* <input type="text" placeholder="Email" name="Email"><br>
+					Birth Date <input type="text" placeholder="DOB"><br>
+					*Age* <input type="radio" name="age" value="under 20"> under 20
+						<input type="radio" name="age" value="20-30"> 20-30
+						<input type="radio" name="age" value="31-40"> 31-40
+						<input type="radio" name="age" value="41-50"> 41-50
+						<input type="radio" name="age" value="51-60"> 51-60
+						<input type="radio" name="age" value="60+"> 60+
+						<br> <!-- Above code is age range radio buttons for age-->
+					*Business  Address* <textarea name="Business Address" placeholder="Address"></textarea><br>
+					Business Service you offer <input type="text" placeholder="Service required." name="Business Service you offer"><br>
+					First Name of Manager <input type="text" placeholder="First name only" name="First Name of Manager"><br>
+					Last Name of Manager <input type="text" placeholder="Last name only" name="Last Name of Manager"><br>
+					*Phone Number* <input type="text" placeholder="Phone number" name="Phone Number 01"><br>
+					*Email* <input type="text" placeholder="email" name="Email01"><br>
+					Birth Date <input type="text" placeholder="DOB"><br>
+					*Vehicle used for the job*:
+							<select name="Vehicle">
+								<option	value="none">----Please Select-----</option>
+								<option value="Car">Car</option> 
+					 			<option value="Truck">Truck</option> 
+					 			<option value="Ute">Ute</option>
+					 			<option value="Van">Van</option> 
+					 			<option value="other">Other</option> 
+							</select><br><!--Code above is for dropbox vehicle -->
+					*Equipment used*:
+						
+							<input type="radio" name="Equipment" value="none"> None
+							<input type="radio" name="Equipment" value="Electric"> Electric
+							<input type="radio" name="Equipment" value="Hydraulic"> Hydraulic
+							<input type="radio" name="Equipment" value="Hydro"> Hydro
+							<!--Above code is for radio buttons equipment -->
+						<br>
+					Reason for Wanting to join ServiceU
+					<textarea  placeholder="Reason for joining"></textarea><br>
+						<input type="checkbox" name="Qualified"> *Are you Qualified*<br>
+						<input type="checkbox" name="Certified"> *Are you Certified*<br>
+						<input type="checkbox" name="Insured"> *Are you Insured*<br>
+						Name of Insurance Company <input type="text" placeholder="Insurance Company" name="Name of Insurance Company"> <!--Above code is for checkedbox code for qualified, cerified and insured -->
+					<br>
+						 <input type="submit" value="Submit">
+						 <input type="reset" value="Reset">
+					</form><!--Form Submit and Reset code for the form -->
+				</div>
+		</main>
+		<footer>
+			<img src="Images/smallhouse.png" id="Smallhouse" alt="smallhouse" /> 
+			<!--One last picture to improve the over all look of the page being placed at the bottom -->
+		</footer>	
+	</body>
+</html>
