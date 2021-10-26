@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="StyleSheet.xsl"?>
+<!DOCTYPE Details [
+	<!ELEMENT Details (Businesses+)>
+   <!ELEMENT Businesses (Service_type,Business_name,Business_logo?,Pictures+,URL,Address,Phone_number+, Hours_of_operation,In_home_service,Minimum_price*,Hourly_fee*,Business_description,Email,Specials,Reviews,
+   Payment_type,Country_established)>
+   
+   <!ELEMENT Service_type  		  (#PCDATA)>
+   <!ELEMENT Business_name 		  (#PCDATA)>
+   <!ELEMENT Business_logo 		  (#PCDATA)>
+   <!ELEMENT Pictures      		  (#PCDATA)>
+   <!ELEMENT URL           		  (#PCDATA)>
+   <!ELEMENT Address       		  (#PCDATA)>
+   <!ELEMENT Phone_number  		  (#PCDATA)>
+   <!ELEMENT Hours_of_operation   (#PCDATA)>
+   <!ELEMENT In_home_service      (#PCDATA)>
+   <!ELEMENT Minimum_price     	  (#PCDATA)>
+   <!ELEMENT Hourly_fee           (#PCDATA)>
+   <!ELEMENT Business_description (#PCDATA)>
+   <!ELEMENT Email				  (#PCDATA)>
+   <!ELEMENT Specials			  (#PCDATA)>
+   <!ELEMENT Reviews			  (#PCDATA)>
+   <!ELEMENT Payment_type		  (#PCDATA)>
+   <!ATTLIST Payment_type Confirmation CDATA #FIXED "yes">
+   <!ELEMENT Country_established  (#PCDATA)>
+   <!ENTITY Country "Australia">
+
+]>
+<Details>
+	<Businesses>
+	   <Service_type>Financial Advice</Service_type>
+	   <Business_name>Bester Invester</Business_name>
+	   <Business_logo>besterinvester.jpg</Business_logo>
+	   <Pictures>FinancePic1</Pictures>
+	   <URL>www.besterinvester.com</URL>
+	   <Address>3/365 Wells Street Gosford</Address>
+	   <Phone_number>0278273616</Phone_number>
+	   <Hours_of_operation> 8am-5pm</Hours_of_operation> 
+	   <In_home_service>financial planning</In_home_service>
+	   <Minimum_price>$500</Minimum_price>
+	   <Hourly_fee>$95</Hourly_fee>
+	   <Business_description>Investing now for a stable future</Business_description>
+	   <Email>Besterinvester@serviceu.com</Email>
+	   <Specials>Share market shakeup program 10% off</Specials>
+	   <Reviews>7/10 pennies pinched</Reviews>
+	   <Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+	   <Country_established>&Country;</Country_established>
+	</Businesses>
+	<Businesses>
+		<Service_type>Financial Advice</Service_type>
+		<Business_name>Financial safe</Business_name>
+		<Business_logo>FinancialSafe.jpg</Business_logo>
+		<Pictures>FinancePic2</Pictures>
+		<URL>www.financialsafe.com.au</URL>
+		<Address>289 Rosland street Green Hill</Address>
+		<Phone_number> 027116719</Phone_number>
+		<Hours_of_operation>7am-7pm </Hours_of_operation> 
+		<In_home_service>financial advise</In_home_service>
+		<Minimum_price>$450</Minimum_price>
+		<Hourly_fee>$95</Hourly_fee>
+		<Business_description>Helping you pinch a penny to make a dollar </Business_description>
+		<Email>financialsafe@serviceu.com</Email>
+		<Specials>property plus program 20% off</Specials>
+		<Reviews>6/10 pennies pinced</Reviews>
+		<Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+		<Country_established>&Country;</Country_established>
+	</Businesses>
+	<Businesses>
+		<Service_type>Financial Advice</Service_type>
+		<Business_name>Top dollar Finance </Business_name>
+		<Business_logo>TopDollar.jpg</Business_logo>
+		<Pictures>FinancePic3</Pictures>
+		<URL>www.topdollarfinance.com </URL>
+		<Address>132\21 fake street Gosford NSW 2250</Address>
+		<Phone_number>0412877156</Phone_number>
+		<Hours_of_operation>8:30am-5:30pm </Hours_of_operation> 
+		<In_home_service>complete financial advice</In_home_service>
+		<Minimum_price>$300</Minimum_price>
+		<Hourly_fee>$80</Hourly_fee>
+		<Business_description>Top dollar finance is creating stable sustainable financial future </Business_description>
+		<Email>topdollarfinancefunds@serviceu.com</Email>
+		<Specials>First free conseltation on shares and super </Specials>
+		<Reviews>9/10 pennies pinched</Reviews>
+		<Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+		<Country_established>&Country;</Country_established>
+	</Businesses>
+</Details>

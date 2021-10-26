@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="StyleSheet.xsl"?>
+<!DOCTYPE Details [
+	<!ELEMENT Details (Businesses+)>
+   <!ELEMENT Businesses (Service_type,Business_name,Business_logo?,Pictures+,URL,Address,Phone_number+,  Hours_of_operation,In_home_service,Minimum_price*,Hourly_fee*,Business_description,Email,Specials,Reviews,
+   Payment_type,Country_established)>
+  
+   <!ELEMENT Service_type  		  (#PCDATA)>
+   <!ELEMENT Business_name 		  (#PCDATA)>
+   <!ELEMENT Business_logo 		  (#PCDATA)>
+   <!ELEMENT Pictures      		  (#PCDATA)>
+   <!ELEMENT URL           		  (#PCDATA)>
+   <!ELEMENT Address       		  (#PCDATA)>
+   <!ELEMENT Phone_number  		  (#PCDATA)>
+   <!ELEMENT Hours_of_operation   (#PCDATA)>
+   <!ELEMENT In_home_service      (#PCDATA)>
+   <!ELEMENT Minimum_price     	  (#PCDATA)>
+   <!ELEMENT Hourly_fee           (#PCDATA)>
+   <!ELEMENT Business_description (#PCDATA)>
+   <!ELEMENT Email				  (#PCDATA)>
+   <!ELEMENT Specials			  (#PCDATA)>
+   <!ELEMENT Reviews			  (#PCDATA)>
+   <!ELEMENT Payment_type		  (#PCDATA)>
+   <!ATTLIST Payment_type Confirmation CDATA #FIXED "yes">
+   <!ELEMENT Country_established  (#PCDATA)>
+   <!ENTITY Country "Australia">
+   
+  
+
+]>
+<Details>
+	<Businesses>
+	<Service_type>Life Coaching</Service_type>
+	   <Business_name>LC Professionals</Business_name>
+	   <Business_logo>lc.jpg</Business_logo>
+	   <Pictures>CoachPic1.jpg</Pictures>
+	   <URL>www.LcProfessionals.com</URL>
+	   <Address>746 manns rd Gosford nsw 2250</Address>
+	   <Phone_number>0421816339</Phone_number>
+	   <Hours_of_operation>8:30am-5:30pm</Hours_of_operation> 
+	   <In_home_service>life changing coaching</In_home_service>
+	   <Minimum_price>$220</Minimum_price>
+	   <Hourly_fee>$75</Hourly_fee>
+	   <Business_description>life mentoring from your living room</Business_description>
+	   <Email>LcProfessional@serviceU.com</Email>
+	   <Specials>confidence training 40% off</Specials>
+	   <Reviews>8/10 thumbs up</Reviews>
+	   <Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+	   <Country_established>&Country;</Country_established>
+	</Businesses>
+	<Businesses>
+	   <Service_type>Life Coaching</Service_type>
+	   <Business_name>Mr Anderson life Coaching</Business_name>
+	   <Business_logo>Anderson life.jpg </Business_logo>
+	   <Pictures>CoachPic2.jpg</Pictures>
+	   <URL>www.mranderson.com.au</URL>
+	   <Address>531 Entrance road erina</Address>
+	   <Phone_number>0472667298></Phone_number>
+	   <Hours_of_operation>6am-5pm</Hours_of_operation> 
+	   <In_home_service>life wellness programs</In_home_service>
+	   <Minimum_price>$150</Minimum_price>
+	   <Hourly_fee>$60</Hourly_fee>
+	   <Business_description>helping you improve yourself </Business_description>
+	   <Email>mranderson@serviceu.com</Email>
+	   <Specials>Mr Anderson hour of power $70</Specials>
+	   <Reviews>7/10 thumbs up</Reviews>
+	   <Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+	   <Country_established>&Country;</Country_established>
+	</Businesses>
+	<Businesses>
+	   <Service_type>Life Coaching</Service_type>
+	   <Business_name>Wise life</Business_name>
+	   <Business_logo>wise.jpg</Business_logo>
+	   <Pictures>CoachPic3.jpg</Pictures>
+	   <URL>www.wiselife.com</URL>
+	   <Address>578 balaclave road Newcastle</Address>
+	   <Phone_number> 0294876128</Phone_number>
+	   <Hours_of_operation>7am-4pm</Hours_of_operation> 
+	   <In_home_service>complete life mentoring</In_home_service>
+	   <Minimum_price>$180</Minimum_price>
+	   <Hourly_fee>$80</Hourly_fee>
+	   <Business_description>affordable life coaching to get you back to you</Business_description>
+	   <Email>wiselife@serviceu.com</Email>
+	   <Specials>relationship building buddy program 35% off </Specials>
+	   <Reviews>9/10 thumbs up</Reviews>
+	   <Payment_type Confirmation="yes">Cash card excepted</Payment_type>
+	   <Country_established>&Country;</Country_established>
+	</Businesses>  
+</Details>
