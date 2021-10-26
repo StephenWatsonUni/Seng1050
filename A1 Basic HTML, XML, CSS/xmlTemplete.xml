@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Details [
+	<!ELEMENT Details (details+)>
+   <!ELEMENT details 
+   (Service_type,Business_name,Business_logo?,Pictures+,URL,Address,Phone_number+,  Hours_of_operation,In_home_service,Minimum_price*,Hourly_fee*,Business_description,Email,Specials,Reviews,
+   Payment_type)>
+  
+   <!ELEMENT Service_type  		  (#PCDATA)>
+   <!ELEMENT Business_name 		  (#PCDATA)>
+   <!ELEMENT Business_logo 		  (#PCDATA)>
+   <!ELEMENT Pictures      		  (#PCDATA)>
+   <!ELEMENT URL           		  (#PCDATA)>
+   <!ELEMENT Address       		  (#PCDATA)>
+   <!ELEMENT Phone_number  		  (#PCDATA)>
+   <!ELEMENT Hours_of_operation   (#PCDATA)>
+   <!ELEMENT In_home_service      (#PCDATA)>
+   <!ELEMENT Minimum_price     	  (#PCDATA)>
+   <!ELEMENT Hourly_fee           (#PCDATA)>
+   <!ELEMENT Business_description (#PCDATA)>
+   <!ELEMENT Email				  (#PCDATA)>
+   <!ELEMENT Specials			  (#PCDATA)>
+   <!ELEMENT Reviews			  (#PCDATA)>
+   <!ELEMENT Payment_type		  (#PCDATA)>
+   <!ATTLIST Payment_type Confirmation CDATA #FIXED "yes">
+
+]>
+<Details>
+<details>
+   
+   <Service_type></Service_type>
+   <Business_name></Business_name>
+   <Business_logo></Business_logo>
+   <Pictures></Pictures>
+   <URL></URL>
+   <Address></Address>
+   <Phone_number></Phone_number>
+   <Hours_of_operation></Hours_of_operation> 
+   <In_home_service></In_home_service>
+   <Minimum_price></Minimum_price>
+   <Hourly_fee></Hourly_fee>
+   <Business_description></Business_description>
+   <Email></Email>
+   <Specials></Specials>
+   <Reviews></Reviews>
+   <Payment_type Confirmation="yes"></Payment_type>
+  
+   
+</details>
+
+<details>
+  <Service_type></Service_type>
+   <Business_name></Business_name>
+   <Business_logo></Business_logo>
+   <Pictures></Pictures>
+   <URL></URL>
+   <Address></Address>
+   <Phone_number></Phone_number>
+   <Hours_of_operation></Hours_of_operation> 
+   <In_home_service></In_home_service>
+   <Minimum_price></Minimum_price>
+   <Hourly_fee></Hourly_fee>
+   <Business_description></Business_description>
+   <Email></Email>
+   <Specials></Specials>
+   <Reviews></Reviews>
+   <Payment_type Confirmation="yes"></Payment_type>
+
+</details>
+
+<details>
+  <Service_type></Service_type>
+   <Business_name></Business_name>
+   <Business_logo></Business_logo>
+   <Pictures></Pictures>
+   <URL></URL>
+   <Address></Address>
+   <Phone_number></Phone_number>
+   <Hours_of_operation></Hours_of_operation> 
+   <In_home_service></In_home_service>
+   <Minimum_price></Minimum_price>
+   <Hourly_fee></Hourly_fee>
+   <Business_description></Business_description>
+   <Email></Email>
+   <Specials></Specials>
+   <Reviews></Reviews>
+   <Payment_type Confirmation="yes"></Payment_type>
+
+</details>
+
+<details>
+   <Service_type></Service_type>
+   <Business_name></Business_name>
+   <Business_logo></Business_logo>
+   <Pictures></Pictures>
+   <URL></URL>
+   <Address></Address>
+   <Phone_number></Phone_number>
+   <Hours_of_operation></Hours_of_operation> 
+   <In_home_service></In_home_service>
+   <Minimum_price></Minimum_price>
+   <Hourly_fee></Hourly_fee>
+   <Business_description></Business_description>
+   <Email></Email>
+   <Specials></Specials>
+   <Reviews></Reviews>
+  <Payment_type Confirmation="yes"></Payment_type>
+</details>
+</Details>
